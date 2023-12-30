@@ -16,7 +16,7 @@ export default createStore({
     actions:{
         async loadData(context) {
             try {
-              const apikey = 8d6dedb24d734628a1329a29326328bd;
+              const apikey = "8d6dedb24d734628a1329a29326328bd";
               const response = await axios.get(
                 `https://newsapi.org/v2/top-headlines?country=in&category=${context.state.category}&apiKey=${apikey}`
               );
